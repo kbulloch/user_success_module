@@ -1,0 +1,22 @@
+<?php
+
+function hello_user_menu() {
+    // $item = [];
+    $item['add/user/success'] = array(
+        'title' => 'User Added',
+        'page callback' => 'user_success',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $item;
+}
+
+function user_success() {
+    return '<p>
+        You have successfully added a user!
+    </p>';
+}
+
+function hello_user_user_insert() {
+    $_GET['destination'] = 'add/user/success';
+}

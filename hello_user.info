@@ -1,0 +1,5 @@
+name = Hello User
+description = Provides a success page for new user creation.
+package = Epicodus Examples
+core = 7.x
+files[] = hello_user.module
