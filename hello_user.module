@@ -12,9 +12,7 @@ function hello_user_menu() {
 }
 
 function user_success() {
-    return '<p>
-        You have successfully added a user!
-    </p>';
+    return '<p>You have successfully added a user!</p>';
 }
 
 function hello_user_user_insert() {
